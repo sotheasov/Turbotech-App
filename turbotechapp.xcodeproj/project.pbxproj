@@ -11,9 +11,10 @@
 		82365E462456C0D2005FB203 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82365E452456C0D2005FB203 /* LocationViewController.swift */; };
 		82365E482456C0F9005FB203 /* ReceiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82365E472456C0F9005FB203 /* ReceiverViewController.swift */; };
 		82365E4A2456C107005FB203 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82365E492456C107005FB203 /* ProfileViewController.swift */; };
+		82365E4E2456DE09005FB203 /* gridItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82365E4C2456DE09005FB203 /* gridItemCell.swift */; };
+		82365E4F2456DE09005FB203 /* gridItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82365E4D2456DE09005FB203 /* gridItemCell.xib */; };
 		A92B4DC024544BAC00F4A951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92B4DBF24544BAC00F4A951 /* AppDelegate.swift */; };
 		A92B4DC224544BAC00F4A951 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92B4DC124544BAC00F4A951 /* SceneDelegate.swift */; };
-		A92B4DC424544BAC00F4A951 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92B4DC324544BAC00F4A951 /* ViewController.swift */; };
 		A92B4DC724544BAC00F4A951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92B4DC524544BAC00F4A951 /* Main.storyboard */; };
 		A92B4DC924544BAD00F4A951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92B4DC824544BAD00F4A951 /* Assets.xcassets */; };
 		A92B4DCC24544BAD00F4A951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92B4DCA24544BAD00F4A951 /* LaunchScreen.storyboard */; };
@@ -24,10 +25,11 @@
 		82365E452456C0D2005FB203 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		82365E472456C0F9005FB203 /* ReceiverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverViewController.swift; sourceTree = "<group>"; };
 		82365E492456C107005FB203 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		82365E4C2456DE09005FB203 /* gridItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gridItemCell.swift; sourceTree = "<group>"; };
+		82365E4D2456DE09005FB203 /* gridItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = gridItemCell.xib; sourceTree = "<group>"; };
 		A92B4DBC24544BAC00F4A951 /* turbotechapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = turbotechapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92B4DBF24544BAC00F4A951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A92B4DC124544BAC00F4A951 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A92B4DC324544BAC00F4A951 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A92B4DC624544BAC00F4A951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A92B4DC824544BAD00F4A951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A92B4DCB24544BAD00F4A951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,6 +72,15 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		82365E4B2456DC34005FB203 /* ItemCells */ = {
+			isa = PBXGroup;
+			children = (
+				82365E4C2456DE09005FB203 /* gridItemCell.swift */,
+				82365E4D2456DE09005FB203 /* gridItemCell.xib */,
+			);
+			path = ItemCells;
+			sourceTree = "<group>";
+		};
 		A92B4DB324544BAB00F4A951 = {
 			isa = PBXGroup;
 			children = (
@@ -89,12 +100,12 @@
 		A92B4DBE24544BAC00F4A951 /* turbotechapp */ = {
 			isa = PBXGroup;
 			children = (
+				82365E4B2456DC34005FB203 /* ItemCells */,
 				82365E422456BA82005FB203 /* Views */,
 				82365E412456BA76005FB203 /* ViewControllers */,
 				82365E402456BA6B005FB203 /* Models */,
 				A92B4DBF24544BAC00F4A951 /* AppDelegate.swift */,
 				A92B4DC124544BAC00F4A951 /* SceneDelegate.swift */,
-				A92B4DC324544BAC00F4A951 /* ViewController.swift */,
 				A92B4DC524544BAC00F4A951 /* Main.storyboard */,
 				A92B4DC824544BAD00F4A951 /* Assets.xcassets */,
 				A92B4DCA24544BAD00F4A951 /* LaunchScreen.storyboard */,
@@ -163,6 +174,7 @@
 			files = (
 				A92B4DCC24544BAD00F4A951 /* LaunchScreen.storyboard in Resources */,
 				A92B4DC924544BAD00F4A951 /* Assets.xcassets in Resources */,
+				82365E4F2456DE09005FB203 /* gridItemCell.xib in Resources */,
 				A92B4DC724544BAC00F4A951 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,7 +188,7 @@
 			files = (
 				82365E462456C0D2005FB203 /* LocationViewController.swift in Sources */,
 				82365E482456C0F9005FB203 /* ReceiverViewController.swift in Sources */,
-				A92B4DC424544BAC00F4A951 /* ViewController.swift in Sources */,
+				82365E4E2456DE09005FB203 /* gridItemCell.swift in Sources */,
 				A92B4DC024544BAC00F4A951 /* AppDelegate.swift in Sources */,
 				82365E4A2456C107005FB203 /* ProfileViewController.swift in Sources */,
 				A92B4DC224544BAC00F4A951 /* SceneDelegate.swift in Sources */,
