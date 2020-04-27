@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82365E442456C0B2005FB203 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82365E432456C0B2005FB203 /* HomeViewController.swift */; };
+		82365E462456C0D2005FB203 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82365E452456C0D2005FB203 /* LocationViewController.swift */; };
+		82365E482456C0F9005FB203 /* ReceiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82365E472456C0F9005FB203 /* ReceiverViewController.swift */; };
+		82365E4A2456C107005FB203 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82365E492456C107005FB203 /* ProfileViewController.swift */; };
 		A92B4DC024544BAC00F4A951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92B4DBF24544BAC00F4A951 /* AppDelegate.swift */; };
 		A92B4DC224544BAC00F4A951 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92B4DC124544BAC00F4A951 /* SceneDelegate.swift */; };
 		A92B4DC424544BAC00F4A951 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92B4DC324544BAC00F4A951 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82365E432456C0B2005FB203 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		82365E452456C0D2005FB203 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		82365E472456C0F9005FB203 /* ReceiverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverViewController.swift; sourceTree = "<group>"; };
+		82365E492456C107005FB203 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A92B4DBC24544BAC00F4A951 /* turbotechapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = turbotechapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92B4DBF24544BAC00F4A951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A92B4DC124544BAC00F4A951 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82365E402456BA6B005FB203 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		82365E412456BA76005FB203 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				82365E432456C0B2005FB203 /* HomeViewController.swift */,
+				82365E452456C0D2005FB203 /* LocationViewController.swift */,
+				82365E472456C0F9005FB203 /* ReceiverViewController.swift */,
+				82365E492456C107005FB203 /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		82365E422456BA82005FB203 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		A92B4DB324544BAB00F4A951 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +89,9 @@
 		A92B4DBE24544BAC00F4A951 /* turbotechapp */ = {
 			isa = PBXGroup;
 			children = (
+				82365E422456BA82005FB203 /* Views */,
+				82365E412456BA76005FB203 /* ViewControllers */,
+				82365E402456BA6B005FB203 /* Models */,
 				A92B4DBF24544BAC00F4A951 /* AppDelegate.swift */,
 				A92B4DC124544BAC00F4A951 /* SceneDelegate.swift */,
 				A92B4DC324544BAC00F4A951 /* ViewController.swift */,
@@ -138,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82365E462456C0D2005FB203 /* LocationViewController.swift in Sources */,
+				82365E482456C0F9005FB203 /* ReceiverViewController.swift in Sources */,
 				A92B4DC424544BAC00F4A951 /* ViewController.swift in Sources */,
 				A92B4DC024544BAC00F4A951 /* AppDelegate.swift in Sources */,
+				82365E4A2456C107005FB203 /* ProfileViewController.swift in Sources */,
 				A92B4DC224544BAC00F4A951 /* SceneDelegate.swift in Sources */,
+				82365E442456C0B2005FB203 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
