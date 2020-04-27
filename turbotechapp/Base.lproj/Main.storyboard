@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -74,7 +75,55 @@
                     <view key="view" contentMode="scaleToFill" id="FZh-MS-yMT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="78O-hW-OyT">
+                                <rect key="frame" x="0.0" y="88" width="414" height="230"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="11u-Q8-o5C"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ej9-gI-RTY">
+                                    <size key="itemSize" width="414" height="231"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="NzP-So-yog">
+                                        <rect key="frame" x="0.0" y="-0.66666666666666663" width="414" height="231"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Iiz-Jb-SJX">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="231"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="111" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gyZ-Pc-YB6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="231"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gyZ-Pc-YB6" firstAttribute="leading" secondItem="Iiz-Jb-SJX" secondAttribute="leading" id="76S-5t-1UI"/>
+                                                <constraint firstAttribute="trailing" secondItem="gyZ-Pc-YB6" secondAttribute="trailing" id="AIR-Wy-baf"/>
+                                                <constraint firstAttribute="bottom" secondItem="gyZ-Pc-YB6" secondAttribute="bottom" id="cA8-A7-PyW"/>
+                                                <constraint firstItem="gyZ-Pc-YB6" firstAttribute="top" secondItem="Iiz-Jb-SJX" secondAttribute="top" id="maW-Tb-gYR"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="414" height="231"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <pageControl opaque="NO" tag="222" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="SRr-hs-yDD">
+                                <rect key="frame" x="20" y="276" width="374" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SRr-hs-yDD" firstAttribute="bottom" secondItem="78O-hW-OyT" secondAttribute="bottom" constant="-5" id="OHb-FU-rMN"/>
+                            <constraint firstItem="78O-hW-OyT" firstAttribute="leading" secondItem="8qF-U2-Qaj" secondAttribute="leading" id="QYV-va-sqU"/>
+                            <constraint firstItem="8qF-U2-Qaj" firstAttribute="trailing" secondItem="SRr-hs-yDD" secondAttribute="trailing" constant="20" id="Yzi-AJ-69A"/>
+                            <constraint firstItem="78O-hW-OyT" firstAttribute="top" secondItem="8qF-U2-Qaj" secondAttribute="top" id="bA5-0W-9So"/>
+                            <constraint firstItem="78O-hW-OyT" firstAttribute="trailing" secondItem="8qF-U2-Qaj" secondAttribute="trailing" id="eEk-4x-zFO"/>
+                            <constraint firstItem="SRr-hs-yDD" firstAttribute="leading" secondItem="8qF-U2-Qaj" secondAttribute="leading" constant="20" id="qQL-ln-TXP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8qF-U2-Qaj"/>
                     </view>
                     <navigationItem key="navigationItem" title="TURBOTECH" id="N51-u1-7m6" colorLabel="IBBuiltInLabel-Green">
@@ -87,6 +136,10 @@
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="pageView" destination="SRr-hs-yDD" id="3li-61-foK"/>
+                        <outlet property="sliderCollectionView" destination="78O-hW-OyT" id="JhY-Ct-8lw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FQ1-fb-KMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
