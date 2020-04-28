@@ -15,16 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashscreen" translatesAutoresizingMaskIntoConstraints="NO" id="2RQ-dc-JLs">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashscreen" translatesAutoresizingMaskIntoConstraints="NO" id="Pkq-SR-h3M">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="2RQ-dc-JLs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2gK-jv-0vU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2RQ-dc-JLs" secondAttribute="bottom" id="8BW-QM-cgk"/>
-                            <constraint firstItem="2RQ-dc-JLs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mEs-WO-iS7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2RQ-dc-JLs" secondAttribute="trailing" id="tAF-jH-Rni"/>
+                            <constraint firstItem="Pkq-SR-h3M" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="hOH-ze-gYn"/>
+                            <constraint firstItem="Pkq-SR-h3M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iAL-y5-wxJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pkq-SR-h3M" secondAttribute="bottom" id="oAB-zI-n73"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pkq-SR-h3M" secondAttribute="trailing" id="wpG-CK-5g6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -35,6 +36,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splashscreen" width="657" height="1280"/>
+        <image name="splashscreen" width="375" height="812"/>
     </resources>
 </document>
