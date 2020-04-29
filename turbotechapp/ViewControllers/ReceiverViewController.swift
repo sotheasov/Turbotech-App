@@ -9,16 +9,17 @@
 import UIKit
 
 class ReceiverViewController: UIViewController {
+    @IBOutlet weak var navRecieverColor: UINavigationBar!
     @IBOutlet weak var mainView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navRecieverColor.barTintColor = UIColor.init(hue: 212, saturation: 41, brightness: 49, alpha: 1)
         self.mainView.backgroundColor = UIColor(patternImage: UIImage(named: "splashscreen.png")!)
 
-        // Do any additional setup after loading the view.
+        
     }
     
-
     @IBAction func back(_ sender: Any) {
         
     }

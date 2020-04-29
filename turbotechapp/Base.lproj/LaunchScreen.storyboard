@@ -15,17 +15,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="splashscreen" translatesAutoresizingMaskIntoConstraints="NO" id="Pkq-SR-h3M">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashscreen" translatesAutoresizingMaskIntoConstraints="NO" id="YWK-UL-a0Z">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Pkq-SR-h3M" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="hOH-ze-gYn"/>
-                            <constraint firstItem="Pkq-SR-h3M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iAL-y5-wxJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pkq-SR-h3M" secondAttribute="bottom" id="oAB-zI-n73"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pkq-SR-h3M" secondAttribute="trailing" id="wpG-CK-5g6"/>
+                            <constraint firstAttribute="trailing" secondItem="YWK-UL-a0Z" secondAttribute="trailing" id="Jcu-Ya-k7H"/>
+                            <constraint firstItem="YWK-UL-a0Z" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ebk-ep-APe"/>
+                            <constraint firstItem="YWK-UL-a0Z" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="jtv-tY-1hd"/>
+                            <constraint firstAttribute="bottom" secondItem="YWK-UL-a0Z" secondAttribute="bottom" id="ruC-3a-4fL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

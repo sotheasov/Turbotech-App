@@ -161,6 +161,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="KeO-To-CSW"/>
                     <connections>
                         <outlet property="collectionGrid" destination="VG7-tX-5d4" id="6XJ-wy-Gp5"/>
+                        <outlet property="navHomeColor" destination="Ngg-wU-H4g" id="bd1-0t-liq"/>
                         <outlet property="pageView" destination="sZ5-2H-7d0" id="WKT-b3-5Oe"/>
                         <outlet property="slideView" destination="1Gd-QX-PoK" id="5U0-1o-lyy"/>
                     </connections>
@@ -209,6 +210,9 @@
                         <viewLayoutGuide key="safeArea" id="HTp-4A-gry"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Location" image="location" id="OIE-Gy-8I4"/>
+                    <connections>
+                        <outlet property="navLocationColor" destination="GU2-Od-M2K" id="ehL-lj-y06"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pgy-uc-fFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -256,6 +260,8 @@
                     <tabBarItem key="tabBarItem" title="Reciever" image="receiver" id="IFA-h4-3n6"/>
                     <connections>
                         <outlet property="mainView" destination="bHY-1l-pSz" id="tBK-Q6-dPC"/>
+                        <outlet property="navReciever" destination="X6n-Wt-8dV" id="pYG-Oo-0zO"/>
+                        <outlet property="navRecieverColor" destination="X6n-Wt-8dV" id="g0B-c2-Fsc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MdA-5q-A6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -304,16 +310,17 @@
                     <tabBarItem key="tabBarItem" title="Profile" image="profile" id="Cru-Jx-YMo"/>
                     <connections>
                         <outlet property="mainView" destination="fH2-gV-1B7" id="cdd-v8-Aha"/>
+                        <outlet property="navProfileColor" destination="lab-xM-G8m" id="nD5-9j-CO0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GHH-2w-1cI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="379.71014492753625" y="2572.7678571428569"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="QlK-mk-swJ">
             <objects>
-                <tabBarController id="Tgp-wN-f3t" sceneMemberID="viewController">
+                <tabBarController id="Tgp-wN-f3t" customClass="TabBarViewController" customModule="turbotechapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bsS-Ix-xhT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -322,6 +329,7 @@
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <outlet property="tabBarColor" destination="bsS-Ix-xhT" id="uh9-T4-PL4"/>
                         <segue destination="ZyQ-ON-Dah" kind="relationship" relationship="viewControllers" id="6rd-DL-Hr4"/>
                         <segue destination="mvE-NP-EnT" kind="relationship" relationship="viewControllers" id="dkL-WH-VA6"/>
                         <segue destination="6dX-MD-En2" kind="relationship" relationship="viewControllers" id="VPN-6d-oSn"/>

@@ -10,10 +10,12 @@ import UIKit
 
 class LocationViewController: UIViewController {
 
+    @IBOutlet weak var navLocationColor: UINavigationBar!
     override func viewDidLoad() {
         super.viewDidLoad()
+        navLocationColor.barTintColor = UIColor.init(hue: 212, saturation: 41, brightness: 49, alpha: 1)
 
-        // Do any additional setup after loading the view.
+        
     }
     
 

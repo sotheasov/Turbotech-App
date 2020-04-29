@@ -14,6 +14,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource,UICollect
     @IBOutlet weak var pageView: UIPageControl!
     @IBOutlet weak var collectionGrid: UICollectionView!
     
+    @IBOutlet weak var navHomeColor: UINavigationBar!
     var arrayImage = [
         UIImage(named: "picslider1"),
         UIImage(named: "picslider3"),
@@ -46,6 +47,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource,UICollect
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navHomeColor.barTintColor = UIColor.init(hue: 212, saturation: 41, brightness: 49, alpha: 1)
         slideView.dataSource = self
         slideView.delegate = self
         pageView.numberOfPages = arrayImage.count

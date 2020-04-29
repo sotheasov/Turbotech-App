@@ -15,6 +15,7 @@
 		82365E4F2456DE09005FB203 /* gridItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82365E4D2456DE09005FB203 /* gridItemCell.xib */; };
 		82365E5424574258005FB203 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82365E5324574258005FB203 /* CollectionViewCell.swift */; };
 		82365E5624574CE2005FB203 /* DataHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82365E5524574CE2005FB203 /* DataHome.swift */; };
+		A9021493245899C500292FF6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9021492245899C500292FF6 /* TabBarViewController.swift */; };
 		A92B4DC024544BAC00F4A951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92B4DBF24544BAC00F4A951 /* AppDelegate.swift */; };
 		A92B4DC224544BAC00F4A951 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92B4DC124544BAC00F4A951 /* SceneDelegate.swift */; };
 		A92B4DC724544BAC00F4A951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92B4DC524544BAC00F4A951 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		82365E4D2456DE09005FB203 /* gridItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = gridItemCell.xib; sourceTree = "<group>"; };
 		82365E5324574258005FB203 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		82365E5524574CE2005FB203 /* DataHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHome.swift; sourceTree = "<group>"; };
+		A9021492245899C500292FF6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		A92B4DBC24544BAC00F4A951 /* turbotechapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = turbotechapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92B4DBF24544BAC00F4A951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A92B4DC124544BAC00F4A951 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				82365E452456C0D2005FB203 /* LocationViewController.swift */,
 				82365E472456C0F9005FB203 /* ReceiverViewController.swift */,
 				82365E492456C107005FB203 /* ProfileViewController.swift */,
+				A9021492245899C500292FF6 /* TabBarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				A92B4DC024544BAC00F4A951 /* AppDelegate.swift in Sources */,
 				82365E4A2456C107005FB203 /* ProfileViewController.swift in Sources */,
 				A92B4DC224544BAC00F4A951 /* SceneDelegate.swift in Sources */,
+				A9021493245899C500292FF6 /* TabBarViewController.swift in Sources */,
 				82365E442456C0B2005FB203 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
